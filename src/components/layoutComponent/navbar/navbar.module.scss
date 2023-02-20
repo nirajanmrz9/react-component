@@ -1,0 +1,37 @@
+.navbarWrapper {
+  height: 92px;
+  background-color: var(--primary-color-dark);
+  color: #fff;
+
+  .logo {
+    height: 40x;
+    object-fit: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+  }
+  .headContainer {
+    text-align: center;
+    .headingTitle {
+      font-size: 32px;
+    }
+    .subTitle {
+      font-size: 14px;
+    }
+  }
+  .MenuContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+}
+.borderLine {
+  background-color: var(--primary-color);
+  align-self: stretch;
+  height: 4px;
+}
+
+
+

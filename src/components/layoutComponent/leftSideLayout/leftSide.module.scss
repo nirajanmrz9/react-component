@@ -1,0 +1,152 @@
+
+.layoutBody {
+  background-color: var(--color-background-dark);
+  height: calc(100vh - 96px);
+}
+// body layout
+.layoutBody {
+  display: flex;
+  position: relative;
+}
+// left side Bar
+.leftSideBarWrapper {
+  display: flex;
+  transition: ease-out 0.3s;
+  background-color: var(--primary-color-dark);
+  height: calc(100vh - 96px);
+  transition: ease-in-out 0.3s;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow: hidden;
+  // border-radius: 10px;
+  overflow-y: scroll !important;
+  z-index: 25;
+  border-right: 2px solid var(--primary-color);
+  position: relative;
+  @media screen and (max-width: 768px) {
+    width: 100% !important;
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    display: flex
+    //do Smth
+  }
+  .leftSideBarSearch {
+    cursor: pointer;
+
+    height: calc(100vh - 96px);
+    transition: ease-in-out 0.3s;
+    position: relative;
+    width: 250px;
+    background-color: var(--primary-color-dark);
+    border-right: 2px solid var(--primary-color);
+    @media screen and (max-width: 768px) {
+      display: none;
+      width: 100%;
+      //do Smth
+    }
+    .iconToggle {
+      color: #fff;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+  .leftSideBarSearchCollapse {
+    height: calc(100vh - 96px);
+    transition: ease-in-out 0.3s;
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    background-color: var(--primary-color-dark);
+    border-right: 2px solid var(--primary-color);
+    @media screen and (max-width: 768px) {
+      display: none;
+      width: 100%;
+
+      //do Smth
+    }
+    .iconToggle {
+      color: #fff;
+      position: absolute;
+      right: 17px;
+      top: 10px;
+    }
+  }
+
+  .leftsidebarMenuLinks {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+
+      width: 100%;
+
+      //do Smth
+    }
+    .menuLinks , .settinglinks{
+      width: 100%;
+      height: 100%;
+      position: relative;
+ 
+      @media screen and (max-width: 768px) {
+
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //do Smth
+      }
+
+    }
+  }
+  .leftsidebarMenuLinksAdmin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    .menuLinks , .settinglinks{
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  }
+}
+.leftsidebarSmallWidth {
+  width: 150px;
+}
+.leftsidebarFullWidth {
+  width: 350px;
+}
+.leftSideBarWrapper::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.layoutRightSideBody {
+  transition: ease-in-out 0.3s;
+  height: calc(100vh - 96px);
+  padding: 25px  ;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+.layoutRightSideBodyCollapseAdmin{
+  width: calc(100% - 150px);
+  background-color: var(--color-background-light);
+}
+.layoutRightSideBody::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.layoutRightSideBodyCollapse {
+  width: calc(100% - 150px);
+
+}
+.layoutRightSideBodyNoneCollapse
+{
+  width: calc(100% - 350px);
+
+}
