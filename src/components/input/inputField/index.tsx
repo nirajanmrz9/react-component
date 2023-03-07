@@ -1,6 +1,6 @@
 import { useState ,ReactElement} from "react";
 import { FaRegEye, FaEyeSlash } from "react-icons/fa";
-import style from "./input.module.scss";
+import style from "../input.module.scss";
 interface InputProps {
   label: string;
   type: string;
@@ -35,10 +35,11 @@ const InputField = (props: InputProps) => {
         //     ? "email"
         //     :"text" ||  type 
         // }
+        onChange={onChange}
         type={type !== "password" ? type : showPassword ? "text" : "password"}
 
         placeholder={placeholder}
-        className={`px-2 mt-2 w-full py-1 h-10 text-sm md:text-base ${
+        className={`rounded-lg px-2 mt-2 w-full py-1 h-10 text-sm md:text-base ${
           error && "border-2 border-red-500"
         }`}
       />

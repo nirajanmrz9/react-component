@@ -28,18 +28,12 @@ const SearchInputField = (props: InputProps) => {
 
       <input
         name={name}
-        // type={
-        //   passwordIcon && type === "password"
-        //     ? "password"
-        //     : type === "email"
-        //     ? "email"
-        //     :"text" ||  type
-        // }
+
         value={value}
         onChange={onChange}
         type="text"
         placeholder={placeholder}
-        className={`px-2 pl-9 mt-2 w-full py-1 h-10 text-sm md:text-base ${
+        className={`rounded-lg text-black px-2 pl-9 mt-2 w-full py-1 h-10 text-sm md:text-base ${
           error && "border-2 border-red-500"
         }`}
       />

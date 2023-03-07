@@ -4,12 +4,15 @@
   color: #fff;
 
   .logo {
-    height: 40x;
-    object-fit: cover;
+    width: 100px;
+    object-fit: contain;
     cursor: pointer;
     display: flex;
     align-items: center;
+img{
+  height: 68px;
 
+}
   }
   .headContainer {
     text-align: center;

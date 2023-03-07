@@ -1,13 +1,13 @@
 import React from 'react'
 import IconText from '../../iconText';
 import styles from "./leftSide.module.scss"
-import {LeftSideBarProps} from "./index"
+import {LayoutBodyProps} from "./index"
 import { useAdminLinks, useMenuLinks } from '../../../helpers/menu';
 import { useLocation, useNavigate } from 'react-router-dom';
 import settingIcon from "../../../resources/images/setting.svg";
 import MenuIcon from '../../menuIcon';
 
-const Menulist = (props: LeftSideBarProps) => {
+const Menulist = (props: LayoutBodyProps) => {
     const { onClick, toggle, isAdmin = false } = props;
     const route = useNavigate();
     const location = useLocation()

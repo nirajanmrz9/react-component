@@ -133,6 +133,9 @@
   overflow-y: scroll;
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
+  @media screen and (max-width: 768px) {
+    width: 100% !important; 
+  }
 }
 .layoutRightSideBodyCollapseAdmin{
   width: calc(100% - 150px);

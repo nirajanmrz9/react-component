@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import styles from "./leftSide.module.scss"
 import { FaArrowLeft,FaArrowRight } from "react-icons/fa";
 import SearchInputField from '../../input/serachInput';
-import { LeftSideBarProps } from '.';
+import { LayoutBodyProps } from '.';
 
-export const SearchBar = (props: LeftSideBarProps) => {
+export const SearchBar = (props: LayoutBodyProps) => {
     const { onClick, toggle, isAdmin = false } = props;
     const [isSearch, setIsSearch] = useState("");
     const searchHandler = async (e: any) => {
